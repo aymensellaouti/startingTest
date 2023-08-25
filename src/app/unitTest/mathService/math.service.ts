@@ -1,8 +1,8 @@
-import { Injectable } from '@angular/core';
-import { LoggerService } from '../../services/logger.service';
+import { Injectable } from "@angular/core";
+import { LoggerService } from "../../services/logger.service";
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root",
 })
 export class MathService {
   constructor(private logger: LoggerService) {}
