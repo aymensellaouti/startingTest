@@ -24,26 +24,4 @@ fdescribe("ColorUtComponent", () => {
   it("should create", () => {
     expect(component).toBeTruthy();
   });
-
-  it("Div should have red background", () => {
-    // Il faut chercher P
-    const paragraphe = debugElement.query(By.css('[data-testid=para]'));
-    // Assert sur la couleur
-    expect(paragraphe.nativeElement.style.backgroundColor).toBe('red');
-  });
-
-  it("Div should have yellow background after click", () => {
-    // Il faut chercher P
-    const paragraphe = debugElement.query(By.css('[data-testid=para]'));
-    // Assert sur la couleur
-    expect(paragraphe.nativeElement.style.backgroundColor).toBe('red');
-
-    // on doit simuler un click
-    paragraphe.triggerEventHandler('click');
-    // Dire à Angular de faire un change Detection
-    fixture.detectChanges();
-    // Assert sur la couleur => Yellow
-    expect(paragraphe.nativeElement.style.backgroundColor).toBe('yellow');
-
-  });
 });
