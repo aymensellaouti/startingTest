@@ -1,3 +1,6 @@
+import { LoggerService } from "src/app/services/logger.service";
+import { MathService } from "./math.service";
+import { TestBed } from "@angular/core/testing";
 
 
 fdescribe("MathService", () => {
@@ -5,11 +8,10 @@ fdescribe("MathService", () => {
 
   it('should add two numbers', () => {
     // Arrange
-      // Instancier le mathService
+    // Instancier le mathService
     // Act
-      // appeler la méthode add
+    // appeler la méthode add
     // Assert
-      // évaluer est ce que le résultat obtenu est égal au résultat attendu
-
+    // évaluer est ce que le résultat obtenu est égal au résultat attendu
   })
 });
